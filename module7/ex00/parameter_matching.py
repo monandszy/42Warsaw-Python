@@ -8,7 +8,7 @@ if (len(sys.argv) != 2):
 
 word = sys.argv[1]
 
-attempt = input("What was the parameter")
+attempt = input("What was the parameter?: ")
 
 if (word == attempt):
 	print("Good job!")
