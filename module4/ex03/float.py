@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
-print("Give me a number: ", end='')
-i = input()
+i = input("Give me a number: ")
 
 try:
 	int(i)
 	print("This number is an integer")
 except:
-	print("This number is a decimal")	
+	try:
+		float(i)
+		print("This number is a decimal")	
+	except:
+		print("Not a number...")
 

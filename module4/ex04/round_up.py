@@ -3,8 +3,12 @@
 i = input("Give me a number: ")
 
 try:
-	int(i)
-	print(f"{int(i)}")
+	i = int(i)
+	print(f"{i}")
 except:
-    print(f"{int(float(i)) + 1}")
+	try:
+		i = float(i)
+		print(f"{int(i) + 1}")
+	except:
+		print("Not a number")
 
