@@ -2,9 +2,9 @@
 
 i = input("Give me a number: ")
 
-if (float(int(i)) == float(i)):
-    print(f"{int(i)}")
-else:
-    print(f"{int(i) + 1}")
-
+try:
+	int(i)
+	print(f"{int(i)}")
+except:
+    print(f"{int(float(i)) + 1}")
 

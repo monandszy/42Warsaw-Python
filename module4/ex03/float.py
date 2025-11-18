@@ -2,7 +2,9 @@
 print("Give me a number: ", end='')
 i = input()
 
-if (float(int(i)) == float(i)):
+try:
+	int(i)
 	print("This number is an integer")
-else:
-	print("This number is a decimal")
+except:
+	print("This number is a decimal")	
+
