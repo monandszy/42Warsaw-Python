@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def find_the_redheads(people):
-	return list(dict(filter(lambda person: person[0] == "red", people.items())).keys())
+	return list(dict(filter(lambda person: person[1] == "red", people.items())).keys())
 
 dupont_family = {
 "florian": "red",

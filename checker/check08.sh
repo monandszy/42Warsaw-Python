@@ -8,6 +8,6 @@ echo ""
 echo ""
 ./ex03/greetings_for_all.py
 echo ""
-./ex04/methods_everywhere.py
+./ex04/methods_everywhere.py "cat" "catcatca" "catniptolong"
 echo ""
 ./ex05/scope_that.py

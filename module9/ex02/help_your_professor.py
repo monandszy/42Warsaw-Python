@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def avreage(clazz):
+def average(clazz):
 	return(sum(list(clazz.values())) / len(list(clazz.values())))
 
 class_3B = {

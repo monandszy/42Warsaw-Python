@@ -3,15 +3,15 @@
 import sys
 
 def expand(s) -> str:
-	return(s + "zzzzzzzz")
+	return(shrink(s + "zzzzzzzz"))
 
 def shrink(s) -> str:
-	return(s[0:7])
+	return(s[0:8])
 
 argv = len(sys.argv)
 i = 1
 while(i < argv):
-	s = argv[i]
+	s = sys.argv[i]
 	l = len(s)
 	if (l < 8):
 		print(expand(s))
