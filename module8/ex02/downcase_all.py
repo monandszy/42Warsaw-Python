@@ -3,9 +3,9 @@
 import sys
 
 def lowcase_it(s) -> str:
-	return (s.lowcase())
+	return (s.lower())
 
-i = len(sys.argv)
-while(i > 1):
-	print(low_case_it(sys.argv[i -1]))
-	i -= 1
+i = 1
+while(i < len(sys.argv)):
+	print(lowcase_it(sys.argv[i]))
+	i += 1
